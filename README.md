@@ -1,6 +1,8 @@
 externals for puredata
 ======================
 
+these are externals/plugins to be used with [Pure Data](http://puredata.info)
+
 * **f0_auto_scale** - finds min and max values of a stream of numbers and uses them as input scaling range
 * **f0_beats_to_frames** - calculates how many [video]frames will fit in x beats
 * **f0_construct** - a constructive constructor
