@@ -1,0 +1,31 @@
+#N canvas 88 22 485 366 10;
+#X obj 18 12 cnv 15 400 40 empty empty f0_wrap 90 20 0 20 -233017 -66577
+0;
+#X floatatom 112 139 5 0 0 0 - - -;
+#X floatatom 112 270 5 0 0 0 - - -;
+#X floatatom 198 189 5 0 0 0 - - -;
+#X obj 115 118 hsl 128 15 0 127 0 0 empty empty empty -2 -6 0 8 -262144
+-1 -1 0 1;
+#X text 237 220 optional arguments:;
+#X floatatom 155 162 5 0 0 0 - - -;
+#X text 248 239 1 min;
+#X text 248 258 2 max;
+#X obj 115 289 hsl 128 15 0 127 0 0 empty empty empty -2 -6 0 8 -262144
+-1 -1 0 1;
+#X text 199 162 min;
+#X text 243 188 max;
+#X obj 112 221 f0_wrap 40 90;
+#X text 153 142 number to wrap;
+#X text 90 58 wrap values within min/max range;
+#N canvas 25 49 420 300 META 0;
+#X text 13 41 NAME f0extpd_osx;
+#X text 10 25 AUTHOR f@fredrikolofsson.com;
+#X text 10 10 VERSION 2;
+#X text 12 58 DESCRIPTION wrap values;
+#X restore -33 24 pd META;
+#X connect 1 0 12 0;
+#X connect 2 0 9 0;
+#X connect 3 0 12 2;
+#X connect 4 0 1 0;
+#X connect 6 0 12 1;
+#X connect 12 0 2 0;

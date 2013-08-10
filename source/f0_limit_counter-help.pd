@@ -1,0 +1,48 @@
+#N canvas 91 22 509 363 10;
+#X obj 61 12 cnv 15 400 40 empty empty f0_limit_counter 50 20 0 20
+-233017 -66577 0;
+#X floatatom 154 255 5 0 0 0 - - -;
+#X floatatom 296 197 5 0 0 0 - - -;
+#X text 337 234 optional arguments:;
+#X floatatom 225 177 5 0 0 0 - - -;
+#X obj 138 171 bng 15 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
+-1;
+#X obj 225 263 bng 15 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
+-1;
+#X obj 296 263 bng 15 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
+-1;
+#X obj 154 235 f0_limit_counter -2 5;
+#X text 348 255 1 minimum value;
+#X text 348 272 2 maximum value;
+#X text 337 196 ceil value (max);
+#X text 265 176 floor value (min);
+#X msg 41 252 set \$1;
+#X text 28 220 set counter;
+#X floatatom 41 235 5 0 0 0 - - -;
+#X text 94 57 inc or bang to count upwards until ceil value;
+#X text 94 74 dec to count downwards until floor value;
+#X msg 154 171 inc;
+#X msg 161 191 dec;
+#X text 287 279 ceil;
+#X text 215 279 floor;
+#X obj 154 272 bng 15 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
+-1;
+#X text 64 325 note - a little bit different from the max version;
+#N canvas 25 49 420 300 META 0;
+#X text 13 41 NAME f0extpd_osx;
+#X text 10 25 AUTHOR f@fredrikolofsson.com;
+#X text 10 10 VERSION 2;
+#X text 11 57 DESCRIPTION a different counter with floor and ceiling
+;
+#X restore 8 26 pd META;
+#X connect 1 0 22 0;
+#X connect 2 0 8 2;
+#X connect 4 0 8 1;
+#X connect 5 0 8 0;
+#X connect 8 0 1 0;
+#X connect 8 1 6 0;
+#X connect 8 2 7 0;
+#X connect 13 0 8 0;
+#X connect 15 0 13 0;
+#X connect 18 0 8 0;
+#X connect 19 0 8 0;

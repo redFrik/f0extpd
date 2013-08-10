@@ -1,0 +1,43 @@
+#N canvas 91 22 576 381 10;
+#X obj 59 12 cnv 15 400 40 empty empty f0_smooth2 80 20 0 20 -233017
+-66577 0;
+#X floatatom 108 145 5 0 0 0 - - -;
+#X floatatom 108 282 5 0 0 0 - - -;
+#X floatatom 255 166 5 0 0 0 - - -;
+#X text 86 127 numbers to smooth;
+#X text 230 149 smoothing constant alpha;
+#X obj 111 105 hsl 128 15 0 127 0 0 empty empty empty -2 -6 0 8 -262144
+-1 -1 0 1;
+#X obj 16 156 metro 30;
+#X obj 16 121 loadbang;
+#X obj 16 139 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 1 1
+;
+#X obj 111 333 hsl 128 15 0 127 0 0 empty empty empty -2 -6 0 8 -262144
+-1 -1 0 1;
+#X msg 15 282 set 10;
+#X floatatom 255 200 5 0 0 0 - - -;
+#X text 230 183 smoothing constant gamma;
+#X text 253 238 optional arguments:;
+#X text 264 271 2 smoothing constant gamma (default 0.3);
+#X text 264 256 1 smoothing constant alpha (default 0.15);
+#X obj 108 239 f0_smooth2 0.15 0.3;
+#X text 141 57 double exponential smoothing (des);
+#X floatatom 187 282 5 0 0 0 - - -;
+#X text 181 296 trend;
+#N canvas 25 49 420 300 META 0;
+#X text 13 41 NAME f0extpd_osx;
+#X text 10 25 AUTHOR f@fredrikolofsson.com;
+#X text 10 10 VERSION 2;
+#X text 12 57 DESCRIPTION double exponential smoothing (des);
+#X restore 5 25 pd META;
+#X connect 1 0 17 0;
+#X connect 2 0 10 0;
+#X connect 3 0 17 1;
+#X connect 6 0 1 0;
+#X connect 7 0 1 0;
+#X connect 8 0 9 0;
+#X connect 9 0 7 0;
+#X connect 11 0 17 0;
+#X connect 12 0 17 2;
+#X connect 17 0 2 0;
+#X connect 17 1 19 0;

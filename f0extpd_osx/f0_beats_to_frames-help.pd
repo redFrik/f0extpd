@@ -1,0 +1,30 @@
+#N canvas 53 22 484 345 10;
+#X obj 56 12 cnv 15 400 40 empty empty f0_beats_to_frames 30 20 0 20
+-233017 -66577 0;
+#X floatatom 56 129 5 0 0 0 - - -;
+#X floatatom 56 258 10 0 0 0 - - -;
+#X floatatom 226 180 5 0 0 0 - - -;
+#X text 241 222 optional arguments:;
+#X floatatom 141 160 5 0 0 0 - - -;
+#X text 46 59 calculates how many [video]frames will fit in x beats
+;
+#X obj 56 223 f0_beats_to_frames 130 25;
+#X text 252 242 1 tempo (bpm) default 120;
+#X text 252 256 2 fps default 20;
+#X text 97 132 beats;
+#X text 181 159 tempo bpm;
+#X text 267 179 frames per second;
+#X text 284 109 x= (60/bpm)*beats*fps;
+#X text 39 276 number of frames;
+#X text 39 290 per x beats;
+#N canvas 25 49 420 300 META 0;
+#X text 13 41 NAME f0extpd_osx;
+#X text 10 25 AUTHOR f@fredrikolofsson.com;
+#X text 10 10 VERSION 2;
+#X text 12 57 DESCRIPTION calculates how many [video]frames will fit
+in x beats;
+#X restore 5 25 pd META;
+#X connect 1 0 7 0;
+#X connect 3 0 7 2;
+#X connect 5 0 7 1;
+#X connect 7 0 2 0;

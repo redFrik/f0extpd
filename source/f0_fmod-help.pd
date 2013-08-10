@@ -1,0 +1,21 @@
+#N canvas 108 51 470 325 10;
+#X obj 58 12 cnv 15 400 40 empty empty f0_fmod 100 20 0 20 -233017
+-66577 0;
+#X floatatom 136 130 5 0 0 0 - - -;
+#X floatatom 136 240 5 0 0 0 - - -;
+#X floatatom 208 130 5 0 0 0 - - -;
+#X text 233 216 optional argument:;
+#X text 244 232 integer part;
+#X text 112 261 fractional part;
+#X text 201 111 integer part;
+#X obj 136 213 f0_fmod 0.4;
+#N canvas 25 49 420 300 META 0;
+#X text 13 41 NAME f0extpd_osx;
+#X text 10 25 AUTHOR f@fredrikolofsson.com;
+#X text 10 10 VERSION 2;
+#X text 12 56 DESCRIPTION floating-point modulo;
+#X restore 6 26 pd META;
+#X text 126 59 floating-point modulo;
+#X connect 1 0 8 0;
+#X connect 3 0 8 1;
+#X connect 8 0 2 0;
