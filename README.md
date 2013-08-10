@@ -28,12 +28,12 @@ see also <http://www.fredrikolofsson.com/pages/code-pd.html>
 
 the max/msp equivalents are here... <http://www.fredrikolofsson.com/pages/code-max.html>
 
-download&install
-----------------
-osx: download this zipped archive and extract the folder `f0extpd_osx`.  (the other stuff you can trash).  put the f0extpd_osx folder somewhere on your harddrive, open pd and go to preferences/path and add the folder there.
+download&install binaries
+-------------------------
+**osx**: download this zipped archive and extract the folder `f0extpd_osx`.  (the other stuff you can trash).  put the f0extpd_osx folder somewhere on your harddrive, open pd and go to preferences/path and add the folder there.
 
-(optional) build
-----------------
+(optional) build from source
+----------------------------
 open terminal, cd to source folder and type `make` and then `make install`.
 
 on mac osx that should build and automatically copy all the externals+helpfiles to your `~/Library/Pd` folder.
