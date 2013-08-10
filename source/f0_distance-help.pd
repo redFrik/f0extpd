@@ -26,7 +26,7 @@
 #X obj 321 138 bng 15 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
 -1;
 #N canvas 25 49 420 300 META 0;
-#X text 13 41 NAME f0extpd_osx;
+#X text 13 41 NAME f0extpd;
 #X text 10 25 AUTHOR f@fredrikolofsson.com;
 #X text 10 10 VERSION 2;
 #X text 11 58 DESCRIPTION calculate delta distance in 1 \, 2 or 3 dimensions

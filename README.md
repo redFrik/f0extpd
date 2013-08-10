@@ -40,11 +40,11 @@ on mac osx that should build and automatically copy all the externals+helpfiles 
 
 todo
 ----
-* f0.auto_scale~
-* f0.distance~
-* f0.range~
-* f0.range2~
-* f0.smooth~
-* f0.smooth2~
-* f0.tune~
-* f0.ultimate_counter
+* f0_auto_scale~
+* f0_distance~
+* f0_range~
+* f0_range2~
+* f0_smooth~
+* f0_smooth2~
+* f0_tune~
+* f0_ultimate_counter

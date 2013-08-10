@@ -10,6 +10,7 @@ version history
 --------------
 
 -----130810
+* uploaded to github
 * recompiled all externals with the makefiletemplate
 * lots of clean up in the source code
 * some bugfixes

@@ -24,7 +24,7 @@ cpu;
 #X text 99 407 (www.slub.org);
 #X text 233 332 visual feedback of the spike;
 #N canvas 25 49 420 300 META 0;
-#X text 13 41 NAME f0extpd_osx;
+#X text 13 41 NAME f0extpd;
 #X text 10 25 AUTHOR f@fredrikolofsson.com;
 #X text 10 10 VERSION 2;
 #X text 12 57 DESCRIPTION generate cpu spikes;

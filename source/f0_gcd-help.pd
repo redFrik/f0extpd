@@ -10,7 +10,7 @@
 #X text 129 218 gcd;
 #X msg 105 101 88 136 -16 56.35;
 #N canvas 25 49 420 300 META 0;
-#X text 13 41 NAME f0extpd_osx;
+#X text 13 41 NAME f0extpd;
 #X text 10 25 AUTHOR f@fredrikolofsson.com;
 #X text 10 10 VERSION 2;
 #X text 11 57 DESCRIPTION greatest common divisor;

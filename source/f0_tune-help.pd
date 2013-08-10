@@ -21,7 +21,7 @@
 #X text 363 115 quater-tone;
 #X text 375 167 weird scale;
 #N canvas 25 49 420 300 META 0;
-#X text 13 41 NAME f0extpd_osx;
+#X text 13 41 NAME f0extpd;
 #X text 10 25 AUTHOR f@fredrikolofsson.com;
 #X text 10 10 VERSION 2;
 #X text 12 57 DESCRIPTION frequency quantiser;

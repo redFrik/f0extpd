@@ -25,7 +25,7 @@
 #X floatatom 187 282 5 0 0 0 - - -;
 #X text 181 296 trend;
 #N canvas 25 49 420 300 META 0;
-#X text 13 41 NAME f0extpd_osx;
+#X text 13 41 NAME f0extpd;
 #X text 10 25 AUTHOR f@fredrikolofsson.com;
 #X text 10 10 VERSION 2;
 #X text 12 57 DESCRIPTION double exponential smoothing (des);

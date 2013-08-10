@@ -23,7 +23,7 @@
 #X text 257 172 of maximum input;
 #X obj 100 227 f0_snap 32;
 #N canvas 25 49 420 300 META 0;
-#X text 13 41 NAME f0extpd_osx;
+#X text 13 41 NAME f0extpd;
 #X text 10 25 AUTHOR f@fredrikolofsson.com;
 #X text 10 10 VERSION 2;
 #X text 12 56 DESCRIPTION smooth input values by snapping;

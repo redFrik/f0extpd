@@ -28,7 +28,7 @@
 #X text 8 215 anticipate;
 #X obj 141 225 f0_range 65 70;
 #N canvas 25 49 420 300 META 0;
-#X text 13 41 NAME f0extpd_osx;
+#X text 13 41 NAME f0extpd;
 #X text 10 25 AUTHOR f@fredrikolofsson.com;
 #X text 10 10 VERSION 2;
 #X text 11 56 DESCRIPTION finds minimum \, middle and maximum values

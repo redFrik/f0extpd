@@ -18,7 +18,7 @@
 #X text 41 276 number of beats;
 #X text 41 290 per x frames;
 #N canvas 25 49 420 300 META 0;
-#X text 13 41 NAME f0extpd_osx;
+#X text 13 41 NAME f0extpd;
 #X text 10 25 AUTHOR f@fredrikolofsson.com;
 #X text 10 10 VERSION 2;
 #X text 12 58 DESCRIPTION calculates how many beats will fit in x [video]frames

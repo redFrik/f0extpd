@@ -31,7 +31,7 @@
 #X text 287 257 1 low output value;
 #X text 287 276 2 high output value;
 #N canvas 25 49 420 300 META 0;
-#X text 13 41 NAME f0extpd_osx;
+#X text 13 41 NAME f0extpd;
 #X text 10 25 AUTHOR f@fredrikolofsson.com;
 #X text 10 10 VERSION 2;
 #X text 12 57 DESCRIPTION finds minimum and maximum values and uses
