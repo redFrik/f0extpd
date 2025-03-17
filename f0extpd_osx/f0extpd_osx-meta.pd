@@ -1,6 +1,6 @@
-#N canvas 15 49 200 200 10;
-#N canvas 25 49 420 300 META 1;
+#N canvas 16 49 200 200 10;
+#N canvas 25 49 420 300 META 0;
 #X text 13 41 NAME f0extpd_osx;
 #X text 10 25 AUTHOR f@fredrikolofsson.com;
-#X text 10 10 VERSION 2.0;
+#X text 10 10 VERSION 3;
 #X restore 10 10 pd META;

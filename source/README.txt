@@ -9,6 +9,9 @@ http://www.fredrikolofsson.com -> code -> pd
 version history
 --------------
 
+-----250317
+* moved f0.beats_to_frames, f0.frames_to_beats and f0.ratio to the [f0abspd](https://github.com/redFrik/f0abspd) package
+
 -----130810
 * uploaded to github
 * recompiled all externals with the makefiletemplate
