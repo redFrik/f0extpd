@@ -1,0 +1,9 @@
+#N canvas 966 322 200 200 10;
+#N canvas 19 51 420 300 META 0;
+#X text 10 51 AUTHOR Fredrik Olofsson;
+#X text 10 110 VERSION 3.0.0;
+#X text 10 30 NAME f0_smooth2;
+#X text 10 70 DESCRIPTION Double exponential smoothing (DES).;
+#X text 10 90 LICENSE GNU GPL;
+#X text 10 134 LIBRARY f0extpd;
+#X restore 10 10 pd META;

@@ -1,0 +1,11 @@
+#N canvas 195 51 430 275 10;
+#X obj 9 12 cnv 15 400 40 empty empty f0_noergaard 75 20 0 20 #e0e0e0 #404040 0;
+#X floatatom 129 182 5 0 0 0 - - - 0;
+#X floatatom 129 231 5 0 0 0 - - - 0;
+#X obj 129 200 f0_noergaard;
+#X text 85 59 Per Noergaard's infinity series;
+#X text 129 163 index (>= 0);
+#X text 63 95 v[i * 2] = v[i * 2 - 2] - (v[i] - v[i - 1]);
+#X text 63 113 v[i * 2 + 1] = v[i * 2 - 1] + (v[i] - v[i - 1]);
+#X connect 1 0 3 0;
+#X connect 3 0 2 0;

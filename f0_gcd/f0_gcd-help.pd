@@ -1,0 +1,14 @@
+#N canvas 87 38 442 248 10;
+#X obj 16 12 cnv 15 400 40 empty empty f0_gcd 110 20 0 20 #e0e0e0 #404040 0;
+#X floatatom 97 132 5 0 0 0 - - - 0;
+#X floatatom 97 198 5 0 0 0 - - - 0;
+#X obj 97 164 f0_gcd;
+#X floatatom 136 132 5 0 0 0 - - - 0;
+#X text 163 163 floats are truncated!;
+#X text 97 218 gcd;
+#X msg 73 101 88 136 -16 56.35;
+#X text 97 56 Greatest common divisor.;
+#X connect 1 0 3 0;
+#X connect 3 0 2 0;
+#X connect 4 0 3 1;
+#X connect 7 0 3 0;

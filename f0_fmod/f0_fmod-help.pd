@@ -1,0 +1,14 @@
+#N canvas 108 51 452 300 10;
+#X obj 22 12 cnv 15 400 40 empty empty f0_fmod 100 20 0 20 #e0e0e0 #404040 0;
+#X floatatom 100 130 5 0 0 0 - - - 0;
+#X floatatom 100 240 5 0 0 0 - - - 0;
+#X floatatom 172 130 5 0 0 0 - - - 0;
+#X text 197 216 optional argument:;
+#X text 208 232 integer part;
+#X text 76 261 fractional part;
+#X text 165 111 integer part;
+#X obj 100 213 f0_fmod 0.4;
+#X text 90 59 Floating-point modulo.;
+#X connect 1 0 8 0;
+#X connect 3 0 8 1;
+#X connect 8 0 2 0;

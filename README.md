@@ -1,52 +1,83 @@
-externals for puredata
-======================
+# externals for pure-data
 
-these are externals/plugins to be used with [Pure Data](http://puredata.info)
+Some of my Max externals ported to [Pure Data](https://www.puredata.info)
 
-* **f0_auto_scale** - finds min and max values of a stream of numbers and uses them as input scaling range
-* **f0_beats_to_frames** - calculates how many [video]frames will fit in x beats
-* **f0_construct** - a constructive constructor
-* **f0_distance** - calculate the distance between successive (delta) points in 1, 2 or 3 dimensions
-* **f0_fmod** - floating-point modulo operator
-* **f0_fold** - fold float and integer numbers to a specified range
-* **f0_frames_to_beats** - calculates how many beats will fit in x [video]frames
-* **f0_gcd** - find the greatest common divisor
-* **f0_inc_dec_split** - detect direction of incoming values and split to different outlets
-* **f0_limit_counter** - a different counter with floor and ceiling
-* **f0_noergaard** - per nørgård's infinity series
-* **f0_range** - finds minimum, middle and maximum values from a stream of values
-* **f0_range2** - similar to **f0_range** but with an added smooth factor
-* **f0_ratio** - keep width/height proportion
-* **f0_round** - round values to nearest quantised value
-* **f0_slub** - generate cpu spikes - disrupt timing version
-* **f0_slub~** - generate cpu spikes - audio click version
-* **f0_smooth** - single exponential smoothing. good for filtering data from sensors
-* **f0_smooth2** - double exponential smoothing
-* **f0_snap** - smooth by snapping
-* **f0_tune** - an external that "quantise" frequencies
-* **f0_wrap** - wrap float or integer numbers
+- f0_auto_scale - Find minimum and maximum values of a stream of numbers and uses them as input scaling range.
+- f0_construct - A constructive constructor.
+- f0_distance - Calculate delta distance in 1, 2 or 3 dimensions.
+- f0_fmod - Floating-point modulo operator.
+- f0_fold - Fold float and integer numbers to a specified range.
+- f0_gcd - Greatest common divisor.
+- f0_inc_dec_split - Detect direction of incoming values and split to different outlets.
+- f0_limit_counter - A different counter with floor and ceiling.
+- f0_noergaard - Per Nørgård's infinity series.
+- f0_range - Find minimum, middle and maximum values from a stream of values.
+- f0_range2 - Similar to f0_range but with an added smooth factor.
+- f0_round - Round values to nearest quantised value.
+- f0_slub - Generate CPU spikes - disrupt timing version.
+- f0_slub~ - Generate CPU spikes - audio click version.
+- f0_smooth - Single exponential smoothing. Good for filtering data from sensors.
+- f0_smooth2 - Double exponential smoothing.
+- f0_snap - Smooth by snapping.
+- f0_tune - Frequency quantiser.
+- f0_wrap - Wrap float or integer numbers.
 
-see also <http://www.fredrikolofsson.com/pages/code-pd.html>
+Latest macOS version (x86_64 and arm64) available for download from... [releases/latest](http://github.com/redFrik/f0extpd/releases/latest).
 
-the max/msp equivalents are here... <http://www.fredrikolofsson.com/pages/code-max.html>
+For older 32- and 64-bit macOS/OSX, Windows and Linux releases see... <https://fredrikolofsson.com/code/pd/>
 
-download&install binaries
--------------------------
-**osx**: download this zipped archive and extract the folder `f0extpd_osx`.  (the other stuff you can trash).  put the f0extpd_osx folder somewhere on your harddrive, open pd and go to preferences/path and add the folder there.
+The Max/MSP equivalents are here... <https://github.com/redFrik/f0ext>
 
-(optional) build from source
-----------------------------
-open terminal, cd to source folder and type `make` and then `make install`.
+Distributed under GNU GPL license. See included file.
 
-on mac osx that should build and automatically copy all the externals+helpfiles to your `~/Library/Pd` folder.
 
-todo
-----
-* f0_auto_scale~
-* f0_distance~
-* f0_range~
-* f0_range2~
-* f0_smooth~
-* f0_smooth2~
-* f0_tune~
-* f0_ultimate_counter
+## Build
+
+```
+git clone --recursive https://github.com/redFrik/f0extpd.git
+cd f0extpd
+make
+```
+
+For building macOS "fat" binaries (intel and arm) use...
+```
+make arch="x86_64 arm64"
+```
+
+## Install
+
+```
+make install
+make clean
+```
+
+On macOS this will put the externals in ~/Library/Pd
+
+
+## version history
+
+-----250318
+* modernised everything using pd-lib-builder
+* helpfiles cleanup
+* f0_limit_counter set minimum bugfix
+* new builds for macOS (both intel and arm)
+* deleted f0_overview.pd
+* moved f0.beats_to_frames, f0.frames_to_beats and f0.ratio to the [f0abspd](https://github.com/redFrik/f0abspd) package
+
+-----130810
+* uploaded to github
+* recompiled all externals with the makefiletemplate
+* lots of clean up in the source code
+* some bugfixes
+
+-----070116
+* minor update to all externals - trimmed the initial post to the pd-window
+
+-----060830
+* new external f0_wrap
+
+-----060515
+* fixed rand() bug in f0_construct
+
+-----060512
+* first release. all externals ported from max/msp. very minor differences. f0_limit_counter differs the most.
