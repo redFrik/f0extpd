@@ -11,6 +11,7 @@
 #define LONG_MAX 2147483647
 
 #include <m_pd.h>
+#include <math.h>
 
 static t_class *f0ext_class;
 
@@ -43,6 +44,7 @@ void *f0ext_new(t_symbol *s, int argc, t_atom *argv) {
     return (void *)x;
 }
 void f0ext_bang(t_f0ext *x) {
+    x->valCount = fmin(fmax(x->valCount, x->valMin), x->valMax);
     if (x->valCount < x->valMax) {
         x->valCount++;
     }
@@ -58,10 +60,9 @@ void f0ext_inc(t_f0ext *x) {
     f0ext_bang(x);
 }
 void f0ext_dec(t_f0ext *x) {
+    x->valCount = fmin(fmax(x->valCount, x->valMin), x->valMax);
     if (x->valCount > x->valMin) {
         x->valCount--;
-    } else {
-        x->valCount = x->valMin;
     }
     if (x->valCount == x->valMin) {
         outlet_bang(x->out2);
@@ -83,5 +84,5 @@ void f0_limit_counter_setup(void) {
     class_addmethod(f0ext_class, (t_method)f0ext_inc, gensym("inc"), 0);
     class_addmethod(f0ext_class, (t_method)f0ext_dec, gensym("dec"), 0);
     class_addmethod(f0ext_class, (t_method)f0ext_set, gensym("set"), A_DEFFLOAT, 0);
-    post("f0_limit_counter v3.0.0; distributed under GNU GPL license");
+    post("f0_limit_counter v3.0.2; distributed under GNU GPL license");
 }

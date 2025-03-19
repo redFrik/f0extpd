@@ -56,6 +56,9 @@ On macOS this will put the externals in ~/Library/Pd
 
 ## version history
 
+-----250319
+* f0_limit_counter bugfix minimum and maximum arguments
+
 -----250318
 * modernised everything using pd-lib-builder
 * helpfiles cleanup
